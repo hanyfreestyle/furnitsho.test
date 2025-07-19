@@ -5,7 +5,7 @@ namespace App\View\Components\Site\Contact;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Phattarachai\LaravelMobileDetect\Agent;
+use Jenssegers\Agent\Agent;
 
 class CallToActionButton extends Component
 {
