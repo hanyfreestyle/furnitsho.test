@@ -8,14 +8,11 @@
 /public/storage
 /public/wp-content
 /public/media
-#/public/db
+/public/db
 /public/db/*.zip
 /public/db/db/*.zip
 /public/db/SQLDumpSplitterResult
 /public/ckfinder
-/public/images/product
-/public/images/category
-/public/images
 /storage/*.key
 /database/snapshots
 /vendor

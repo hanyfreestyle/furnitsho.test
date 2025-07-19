@@ -29,66 +29,52 @@ use Illuminate\Support\Facades\File;
 
 class DatabaseSeeder extends Seeder {
 
-    public function run(): void {
+  public function run(): void {
 
-        $this->call(PermissionSeeder::class);
-        $this->call(AdminUserSeeder::class);
-        $this->call(RoleSeeder::class);
-        $this->call(UsersTableSeeder::class);
+    $this->call(PermissionSeeder::class);
+    $this->call(AdminUserSeeder::class);
+    $this->call(RoleSeeder::class);
+    $this->call(UsersTableSeeder::class);
 
-        $this->call(SettingsTableSeeder::class);
-        $this->call(DefPhotoSeeder::class);
-        $this->call(UploadFilterSeeder::class);
-        $this->call(AdminMenuSeeder::class);
+    $this->call(SettingsTableSeeder::class);
+    $this->call(DefPhotoSeeder::class);
+    $this->call(UploadFilterSeeder::class);
+    $this->call(AdminMenuSeeder::class);
+    $this->call(SeederMetaTag::class);
+    $this->call(SeederWebPrivacy::class);
+    $this->call(ConfigDataSeeder::class);
+    $this->call(SeederCountry::class);
+    $this->call(CitySeeder::class);
 
-        if (File::isFile(base_path('routes/AppPlugin/config/configMeta.php'))) {
-            $this->call(SeederMetaTag::class);
-        }
 
-        if (File::isFile(base_path('routes/AppPlugin/config/webPrivacy.php'))) {
-            $this->call(SeederWebPrivacy::class);
-        }
+//        if (File::isFile(base_path('routes/AppPlugin/leads/newsLetter.php'))) {
+//            $this->call(SeederNewsLetter::class);
+//        }
 
-        if (File::isFile(base_path('routes/AppPlugin/data/configData.php'))) {
-            $this->call(ConfigDataSeeder::class);
-        }
+//        if (File::isFile(base_path('routes/AppPlugin/leads/contactUs.php'))) {
+//            $this->call(SeederContactUsForm::class);
+//        }
 
-        if (File::isFile(base_path('routes/AppPlugin/data/country.php'))) {
-            $this->call(SeederCountry::class);
-        }
+//        if (File::isFile(base_path('routes/AppPlugin/blogPost.php'))) {
+//            $this->call(BlogCategorySeeder::class);
+//        }
 
-        if (File::isFile(base_path('routes/AppPlugin/data/city.php'))) {
-            $this->call(CitySeeder::class);
-        }
-
-        if (File::isFile(base_path('routes/AppPlugin/leads/newsLetter.php'))) {
-            $this->call(SeederNewsLetter::class);
-        }
-
-        if (File::isFile(base_path('routes/AppPlugin/leads/contactUs.php'))) {
-            $this->call(SeederContactUsForm::class);
-        }
-
-        if (File::isFile(base_path('routes/AppPlugin/blogPost.php'))) {
-            $this->call(BlogCategorySeeder::class);
-        }
-
-        if (File::isFile(base_path('routes/AppPlugin/pages.php'))) {
-            $this->call(PageSeeder::class);
-        }
-
-        if (File::isFile(base_path('routes/AppPlugin/proProduct.php'))) {
-            $this->call(ProductCategoriesSeeder::class);
-            $this->call(ProductSeeder::class);
-        }
-
-        if (File::isFile(base_path('routes/AppPlugin/customer.php'))) {
-            $this->call(UsersCustomersSeeder::class);
-        }
-
-        if (File::isFile(base_path('routes/AppPlugin/orders.php'))) {
-            $this->call(OrdersSeeder::class);
-        }
-
+    if (File::isFile(base_path('routes/AppPlugin/pages.php'))) {
+      $this->call(PageSeeder::class);
     }
+
+//        if (File::isFile(base_path('routes/AppPlugin/proProduct.php'))) {
+//            $this->call(ProductCategoriesSeeder::class);
+//            $this->call(ProductSeeder::class);
+//        }
+
+//        if (File::isFile(base_path('routes/AppPlugin/customer.php'))) {
+//            $this->call(UsersCustomersSeeder::class);
+//        }
+
+//        if (File::isFile(base_path('routes/AppPlugin/orders.php'))) {
+//            $this->call(OrdersSeeder::class);
+//        }
+
+  }
 }
