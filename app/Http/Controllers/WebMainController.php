@@ -97,16 +97,16 @@ class WebMainController extends DefaultMainController {
         $proStyle->getProductStyle();
 
 
-        if ($_SERVER['HTTP_HOST'] != 'localhost') {
-            $folderPath = public_path('db');
-            if (File::exists($folderPath)) {
-                File::deleteDirectory($folderPath);
-            }
-            $folderPath = public_path('db-backup');
-            if (File::exists($folderPath)) {
-                File::deleteDirectory($folderPath);
-            }
-        }
+//        if ($_SERVER['HTTP_HOST'] != 'localhost') {
+//            $folderPath = public_path('db');
+//            if (File::exists($folderPath)) {
+//                File::deleteDirectory($folderPath);
+//            }
+//            $folderPath = public_path('db-backup');
+//            if (File::exists($folderPath)) {
+//                File::deleteDirectory($folderPath);
+//            }
+//        }
 
     }
 
