@@ -68,7 +68,7 @@
 .pagination_edit li{margin-right:5px;margin-left:5px}
 
 .footer_logo{}
-.footer_logo img{max-height: 90px;width: auto;}
+.footer_logo img{max-width: 310px; height: auto}
 .footer__top .menu li{border-bottom: 1px dotted rgba(255,255,255,.2);}
 .footer__top .menu li a:hover{color: red;}
 .footer_read_more{font-size: 14px;display: inline-block;padding-top: 8px!important;}

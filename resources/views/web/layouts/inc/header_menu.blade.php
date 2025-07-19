@@ -41,9 +41,9 @@
                                 <a class="lh__1 flex al_center pr {{activeMenu($pageView,'ProductsCategories')}}"
                                    href="{{route('ProductsCategoriesList')}}">{{__('web/menu.mobile_t_categories')}}</a>
                             </li>
-                            <li class="menu-item menu_has_offsets menu_right pos_right">
-                                <a class="lh__1 flex al_center pr {{activeMenu($pageView,'Brand')}}" href="{{route('BrandList')}}">{{__('web/menu.mobile_brand')}}</a>
-                            </li>
+{{--                            <li class="menu-item menu_has_offsets menu_right pos_right">--}}
+{{--                                <a class="lh__1 flex al_center pr {{activeMenu($pageView,'Brand')}}" href="{{route('BrandList')}}">{{__('web/menu.mobile_brand')}}</a>--}}
+{{--                            </li>--}}
 
                             <li class="menu-item menu_has_offsets menu_right pos_right">
                                 <a class="lh__1 flex al_center pr {{activeMenu($pageView,'BlogList')}}" href="{{route('BlogList')}}">{{__('web/menu.main_blog')}}</a>
